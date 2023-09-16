@@ -89,7 +89,17 @@ a:hover {
   color:white;
 }
 
-/* computer users hell yeah */
+#assignpng.windowbox {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+#projpng.windowbox {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+/* computer users hell yeah !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 @media screen and (min-width: 800px){
   .sitebox {
@@ -100,7 +110,14 @@ a:hover {
 
 }
 
-/* mobile users yikes */
+@media screen and (min-width: 800px) and (max-width: 940px) {
+  #url {
+    font-size: 14px;
+  }
+
+}
+
+/* mobile users yikes :(((((((((((( frown */
 
 @media screen and (max-width: 800px){
 
