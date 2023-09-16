@@ -24,7 +24,7 @@ p {
   font-family: georgia, serif;
 }
 
-a:link {
+a {
   color: #53A4FB;
   font-family: georgia, serif;
 }
@@ -83,6 +83,10 @@ a:hover {
 .navlinks {
   padding: 0px 2.5vw;
   grid-row-start: 3;
+}
+
+.navlinks a {
+  color:white;
 }
 
 /* computer users hell yeah */
