@@ -38,9 +38,6 @@ a:hover {
 }
 
 .windowbox {
-  grid-column-start: 3;
-  grid-column-end: 7;
-  grid-row-start: 2;
   height: max-content;
   background-color: white;
   border: 3px solid #53A4FB;
@@ -48,11 +45,11 @@ a:hover {
 }
 
 .topbar {
-  height:30px ;
   color: white;
   background-color:#53A4FB;
   border: 3px solid #53A4FB;
-  padding: 0px 15px 20px;
+  padding: 0px 15px 1.75vw;
+  margin: 0px;
 }
 
 #url {
@@ -60,43 +57,25 @@ a:hover {
   font-family: "Lucida Console", sans-serif;
 }
 
-#iconsimg {
-  height:40px;
-}
-
 .textbox {
   margin: 30px;
 }
 
 .navbar {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  height: 100vh;
   background-color:#53A4FB;
   position: fixed;
 }
 
-#icon {
-  width: 20vw;
-}
-
-.navlinks {
-  padding: 0px 2.5vw;
-  grid-row-start: 3;
-}
-
 .navlinks a {
   color:white;
+  font-family: "Lucida Console", sans-serif;
+  font-weight: bold;
 }
 
-#assignpng.windowbox {
-  grid-column-start: 3;
-  grid-column-end: 4;
-}
-
-#projpng.windowbox {
-  grid-column-start: 5;
-  grid-column-end: 7;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* computer users hell yeah !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -108,11 +87,55 @@ a:hover {
     
   }
 
-}
+  .navbar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 100vh;
+  }
 
-@media screen and (min-width: 800px) and (max-width: 940px) {
+  .windowbox {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 2;
+  }
+
+  .topbar {
+    height: 2vw;
+  }
+
+  #assignpng.windowbox {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  
+  #projpng.windowbox {
+    grid-column-start: 5;
+    grid-column-end: 7;
+  }
+
+  #icon {
+    width: 20vw;
+  }
+  
+  .navlinks {
+    padding: 0px 2.5vw;
+    grid-row-start: 3;
+  }
+
+  #iconsimg {
+    height: 3vw;
+  }
+
+  ul {
+    line-height: 3.5vw;
+  }
+
+  li {
+    font-size: 2vw;
+  }
+
   #url {
-    font-size: 14px;
+    font-size: 1.5vw;
   }
 
 }
@@ -120,5 +143,50 @@ a:hover {
 /* mobile users yikes :(((((((((((( frown */
 
 @media screen and (max-width: 800px){
+  .sitebox {
+    grid-template-columns: 10% 75% 5% 10%;
+    grid-template-rows: 10vw 7vw 90vw; 
+  }
+
+  .navbar {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 60px;
+    width: 100vw;
+  }
+
+  #icon {
+    width: 0px;
+  }
+
+  .windowbox {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+  }
+
+  .topbar {
+    height: 5vw;
+  }
+  
+  #projpng.windowbox {
+    grid-row-start: 4;
+  }
+
+  #iconsimg {
+    height: 6vw;
+  }
+
+  li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 5px;
+  }
+
+  #url {
+    font-size: 2.5vw;
+  }
 
 }
