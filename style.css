@@ -4,12 +4,17 @@ body {
   margin: 0;
 }
 
-h1, h2 {
+h1 {
   color: #202023;
   font-family: "Lucida Console", sans-serif;
 }
 
-h3, h4 {
+h2, h3 {
+  color: white;
+  font-family: "Lucida Console", sans-serif;
+}
+
+h4, h5 {
   color: #202023;
   font-family: georgia, serif;
 }
@@ -20,7 +25,7 @@ p {
 }
 
 a:link {
-  color: #6AA2F5;
+  color: #53A4FB;
   font-family: georgia, serif;
 }
 
@@ -34,25 +39,29 @@ a:hover {
 
 .windowbox {
   grid-column-start: 3;
-  grid-column-end: 6;
+  grid-column-end: 7;
   grid-row-start: 2;
   height: max-content;
   background-color: white;
-  border: 3px solid #6AA2F5;
+  border: 3px solid #53A4FB;
   border-radius: 3px;
 }
 
 .topbar {
   height:30px ;
   color: white;
-  background-color:#6AA2F5;
-  border: 3px solid #6AA2F5;
+  background-color:#53A4FB;
+  border: 3px solid #53A4FB;
   padding: 0px 15px 20px;
 }
 
 #url {
   color: white;
   font-family: "Lucida Console", sans-serif;
+}
+
+#iconsimg {
+  height:40px;
 }
 
 .textbox {
@@ -63,7 +72,7 @@ a:hover {
   grid-column-start: 1;
   grid-column-end: 2;
   height: 100vh;
-  background-color:#6AA2F5;
+  background-color:#53A4FB;
   position: fixed;
 }
 
@@ -71,12 +80,17 @@ a:hover {
   width: 20vw;
 }
 
+.navlinks {
+  padding: 0px 2.5vw;
+  grid-row-start: 3;
+}
+
 /* computer users hell yeah */
 
 @media screen and (min-width: 800px){
   .sitebox {
-    grid-template-columns: 18% 9% 31% 4% 31% 6%;
-    grid-template-rows: 10vw 30vw; 
+    grid-template-columns: 18% 9% 31% 4% 29% 2% 6%;
+    grid-template-rows: 10vw 10vw 10vw; 
     
   }
 
