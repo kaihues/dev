@@ -1,3 +1,89 @@
-p{
-  font-size: 20px;
+body {
+  background-color:#CCF6FF;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2 {
+  color: #202023;
+  font-family: "Lucida Console", sans-serif;
+}
+
+h3, h4 {
+  color: #202023;
+  font-family: georgia, serif;
+}
+
+p {
+  color: #202023;
+  font-family: georgia, serif;
+}
+
+a:link {
+  color: #6AA2F5;
+  font-family: georgia, serif;
+}
+
+a:hover {
+  color:#5D72DF;
+}
+
+.sitebox {
+  display: grid;
+}
+
+.windowbox {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  height: max-content;
+  background-color: white;
+  border: 3px solid #6AA2F5;
+  border-radius: 3px;
+}
+
+.topbar {
+  height:30px ;
+  color: white;
+  background-color:#6AA2F5;
+  border: 3px solid #6AA2F5;
+  padding: 0px 15px 20px;
+}
+
+#url {
+  color: white;
+  font-family: "Lucida Console", sans-serif;
+}
+
+.textbox {
+  margin: 30px;
+}
+
+.navbar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 100vh;
+  background-color:#6AA2F5;
+  position: fixed;
+}
+
+#icon {
+  width: 20vw;
+}
+
+/* computer users hell yeah */
+
+@media screen and (min-width: 800px){
+  .sitebox {
+    grid-template-columns: 18% 9% 31% 4% 31% 6%;
+    grid-template-rows: 10vw 30vw; 
+    
+  }
+
+}
+
+/* mobile users yikes */
+
+@media screen and (max-width: 800px){
+
 }
