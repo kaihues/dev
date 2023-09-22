@@ -6,6 +6,7 @@ const para2 = document.getElementById('para2');
 const img1 = document.getElementById('img1');
 
 let isStyled = false;
+para2.style.color = '#FFFFFF';
 
 document.addEventListener('click', () => {
     if (isStyled) {

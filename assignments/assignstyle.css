@@ -30,13 +30,14 @@ body {
 
   .sitebox {
     display: grid;
-    grid-template-columns: 10% 70% 10% 10%;
-    grid-template-rows: 7vw; 
+    grid-template-columns: 12% 76% 12%;
+    grid-template-rows: 9vw; 
+    padding-bottom: 9vw;
   }
 
   .windowbox {
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 3;
     grid-row-start: 2;
     height: max-content;
     background-color: white;
@@ -53,6 +54,12 @@ body {
     margin: 0px;
   }
 
+  #url {
+    color: white;
+    font-family: "Lucida Console", sans-serif;
+    font-size: 1.3vw;
+  }
+
   .textbox {
     margin: 30px;
   }
@@ -61,6 +68,6 @@ body {
     height: 3vw;
   }
 
-  #para2 {
-    color:white;
+  #img1 {
+    width: 25vw;
   }
