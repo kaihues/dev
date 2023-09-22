@@ -83,7 +83,7 @@ ul {
 @media screen and (min-width: 800px){
   .sitebox {
     grid-template-columns: 18% 9% 31% 4% 29% 2% 6%;
-    grid-template-rows: 7vw repeat(8, 250px) 4.75vw; 
+    grid-template-rows: 7vw repeat(4, 250px) 4.75vw; 
   }
 
   .navbar {
@@ -98,32 +98,58 @@ ul {
     grid-row-start: 2;
   }
 
+  #windowbox1 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+  }
+
   #windowbox2 {
-    grid-row-start: 3;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 2;
   }
 
   #windowbox3 {
-    grid-row-start: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
   }
 
   #windowbox4 {
-    grid-row-start: 5;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 3;
   }
 
   #windowbox5 {
-    grid-row-start: 6;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
   }
 
   #windowbox6 {
-    grid-row-start: 7;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 4;
   }
 
   #windowbox7 {
-    grid-row-start: 8;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
   }
 
   #windowbox8 {
-    grid-row-start: 9;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 5;
+  }
+
+  #windowboxproj {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 3;
   }
 
   .topbar {
