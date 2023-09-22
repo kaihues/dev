@@ -71,3 +71,45 @@ body {
   #img1 {
     width: 25vw;
   }
+
+  #formmessage {
+    list-style-type: none;
+    margin: 0 0 30px 0;
+    padding: 0;
+    line-height: 2vw;
+  }
+
+  label {
+    display: block;
+  }
+
+  form li + li {
+    margin-top: 1em;
+  }
+
+  input, textarea {
+    width: 300px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    vertical-align: text-top;
+    height: 5em;
+  }
+
+  #thank {
+    float: right;
+    display: inline;
+  }
+
+  #heart {
+    float: right;
+    display: inline;
+    padding-right: 4vw;
+  }
+
+  #formclick {
+    float: right;
+    width: 20vw;
+  }
+
