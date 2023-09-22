@@ -83,7 +83,7 @@ ul {
 @media screen and (min-width: 800px){
   .sitebox {
     grid-template-columns: 18% 9% 31% 4% 29% 2% 6%;
-    grid-template-rows: 7vw repeat(8, 250px); 
+    grid-template-rows: 7vw repeat(8, 250px) 4.75vw; 
   }
 
   .navbar {
@@ -127,7 +127,7 @@ ul {
   }
 
   .topbar {
-    height: 2vw;
+    height: 1.6vw;
   }
 
   #assignpng.windowbox {
@@ -162,7 +162,7 @@ ul {
   }
 
   #url {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
   }
 
 }
