@@ -27,3 +27,40 @@ body {
   a:hover {
     color:#5D72DF;
   }
+
+  .sitebox {
+    display: grid;
+    grid-template-columns: 10% 70% 10% 10%;
+    grid-template-rows: 7vw; 
+  }
+
+  .windowbox {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    height: max-content;
+    background-color: white;
+    border: 3px solid #53A4FB;
+    border-radius: 3px;
+  }
+
+  .topbar {
+    height: 1.6vw;
+    color: white;
+    background-color:#53A4FB;
+    border: 3px solid #53A4FB;
+    padding: 0px 15px 1.75vw;
+    margin: 0px;
+  }
+
+  .textbox {
+    margin: 30px;
+  }
+
+  #iconsimg {
+    height: 3vw;
+  }
+
+  #para2 {
+    color:white;
+  }
