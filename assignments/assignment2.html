@@ -7,27 +7,20 @@
 <meta name="viewport" content ="width=device-width">
 <title>Dev portal</title>
 <script defer src="script.js"></script>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assignstyle.css">
 
 </head>
 <body>
 
-    <h1>Not Hello World</h1>
-    <div>
-        <h1>Hello World!</h1>
-        <p class="my-paragraph">placeholder !</p>
-        <p id="my-specific-paragraph">yeag</p>
-    </div>
+    <form id="message">
+        <label for="yourname">your name:</label>
+        <input id="yourname" type="text" name="your name">
 
-    <form>
-        <label for="username">Username:</label>
-        <input id="username" type="text" name="username">
+        <label for="color">your favorite color:</label>
+        <input id="color" type="color" name="your favorite color">
 
-        <label for="password">Password</label>
-        <input id="password" type="password" name="password">
-
-        <input type="submit">
     </form>
+    <button type="submit" form="message" value="Submit">send your message!</button>
 
 </body>
 </html>

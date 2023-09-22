@@ -83,8 +83,7 @@ ul {
 @media screen and (min-width: 800px){
   .sitebox {
     grid-template-columns: 18% 9% 31% 4% 29% 2% 6%;
-    grid-template-rows: 7vw 10vw 10vw; 
-    
+    grid-template-rows: 7vw repeat(8, 250px); 
   }
 
   .navbar {
@@ -97,6 +96,34 @@ ul {
     grid-column-start: 3;
     grid-column-end: 7;
     grid-row-start: 2;
+  }
+
+  #windowbox2 {
+    grid-row-start: 3;
+  }
+
+  #windowbox3 {
+    grid-row-start: 4;
+  }
+
+  #windowbox4 {
+    grid-row-start: 5;
+  }
+
+  #windowbox5 {
+    grid-row-start: 6;
+  }
+
+  #windowbox6 {
+    grid-row-start: 7;
+  }
+
+  #windowbox7 {
+    grid-row-start: 8;
+  }
+
+  #windowbox8 {
+    grid-row-start: 9;
   }
 
   .topbar {
@@ -177,6 +204,11 @@ ul {
 
   #iconsimg {
     height: 6vw;
+  }
+
+  ul {
+    width:fit-content;
+    margin:auto;
   }
 
   li {
