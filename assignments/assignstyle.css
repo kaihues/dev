@@ -68,9 +68,13 @@ body {
     height: 3vw;
   }
 
+  /* assignment 1 ------------------------------ */
+
   #img1 {
     width: 25vw;
   }
+
+  /* assignment 2 ------------------------------ */
 
   #formmessage {
     list-style-type: none;
@@ -112,4 +116,6 @@ body {
     float: right;
     width: 20vw;
   }
+
+  /* assignment 4 ------------------------------ */
 
