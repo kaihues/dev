@@ -11,9 +11,10 @@ function quiz() {
     let num = Math.floor(Math.random() * 1);
   
     for (let i = 0; i <= questions.count; i++) {
-      const question = questions[num];
+      const question = questions[i];
       const answer = prompt(question);
-      if (answer == answers[num]) {
+
+      if (answer == answers[i]) {
         score++;
         alert('Correct!');
       } else {
