@@ -5,16 +5,16 @@ function quiz() {
       'How many moons does Venus have?'
     ];
     const answers = [1, 82, 0];
-  
-    const score = 0;
-  
-    let num = Math.floor(Math.random() * 1);
-  
-    for (let i = 0; i <= questions.count; i++) {
-      const question = questions[i];
-      const answer = prompt(question);
 
-      if (answer == answers[i]) {
+    let score = 0;
+  
+    let num = Math.floor(Math.random() * 3);
+  
+    for (let i = 1; i <= questions.length; i++) {
+      const question = questions[num];
+      const answer = Number(prompt(question));
+
+      if (answer == answers[num]) {
         score++;
         alert('Correct!');
       } else {
