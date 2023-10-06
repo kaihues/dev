@@ -119,3 +119,27 @@ body {
 
   /* assignment 4 ------------------------------ */
 
+  #foximg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+  }
+
+  #foxbutton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #53A4FB;
+    color: white;
+    padding: 2vw;
+    border: none;
+    border-radius: 8px;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 2.5vw;
+  }
+
+  #foxbutton:hover {
+    background-color:#5e96f1;
+  }

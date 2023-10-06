@@ -1,10 +1,10 @@
 {
   "name": "assignment5",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "./src/index.js",
   "scripts": {
     "build": "webpack",
-    "server": "http-server"
+    "dev": "webpack serve"
   },
   "license": "MIT",
   "dependencies": {
