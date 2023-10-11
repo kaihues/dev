@@ -1,0 +1,73 @@
+body {
+    background-color:#CCF6FF;
+    padding: 0;
+    margin: 0;
+  }
+  
+  h1 {
+    color: #202023;
+    font-family: "Lucida Console", sans-serif;
+  }
+  
+  h4, h5 {
+    color: #202023;
+    font-family: georgia, serif;
+  }
+  
+  p {
+    color: #202023;
+    font-family: georgia, serif;
+  }
+  
+  a {
+    color: #53A4FB;
+    font-family: georgia, serif;
+  }
+  
+  a:hover {
+    color:#5D72DF;
+  }
+
+  .sitebox {
+    display: grid;
+    grid-template-columns: 12% 76% 12%;
+    grid-template-rows: 9vw; 
+    padding-bottom: 9vw;
+  }
+
+  .windowbox {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    height: max-content;
+    background-color: white;
+    border: 3px solid #53A4FB;
+    border-radius: 3px;
+  }
+
+  .topbar {
+    height: 1.6vw;
+    color: white;
+    background-color:#53A4FB;
+    border: 3px solid #53A4FB;
+    padding: 0px 15px 1.75vw;
+    margin: 0px;
+  }
+
+  #url {
+    color: white;
+    font-family: "Lucida Console", sans-serif;
+    font-size: 1.3vw;
+  }
+
+  .textbox {
+    margin: 30px;
+  }
+
+  #iconsimg {
+    height: 3vw;
+  }
+
+  .test {
+    color:red;
+  }

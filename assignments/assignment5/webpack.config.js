@@ -3,14 +3,30 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './assignment5.js',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './assignment5.html'
+      template: './index.html'
     })
-  ]
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.(csv|tsv)$/i,
+        use: ['csv-loader']
+      }
+    ]
+  }
 };
