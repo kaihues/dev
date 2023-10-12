@@ -15,7 +15,7 @@ const button = document.getElementById('foxbutton');
     }
 
     function loading() {
-        image.src = 'https://cdn.discordapp.com/attachments/784612710218072074/1159733396281495634/loading.png?ex=653218e4&is=651fa3e4&hm=eada779a5eff27bb38bf285a3f78f18beb4be4266ea810c2ac209f2f01f779ca&';
+        image.src = '../images/loading.png';
     }
     
     button.addEventListener('click', () => {

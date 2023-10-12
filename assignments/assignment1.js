@@ -22,11 +22,11 @@ document.addEventListener('click', () => {
 });
 
 img1.addEventListener('mouseover', () => {
-    img1.src = "https://cdn.discordapp.com/attachments/784612710218072074/1151987000166064208/cat-wake.PNG";
+    img1.src = "../images/wake-kitty.png";
 
 });
 
 img1.addEventListener('mouseout', () => {
-    img1.src = "https://cdn.discordapp.com/attachments/784612710218072074/1151986999935385720/cat-sleep.PNG";
+    img1.src = "../images/shh-kitty.png";
 
 });
