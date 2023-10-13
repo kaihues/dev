@@ -1,0 +1,36 @@
+body {
+    background-color:#CCF6FF;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar {
+    color: white;
+    background-color:#53A4FB;
+    padding: 0px 15px 1.75vw;
+    margin: 0px;
+    position: fixed;
+  }
+
+  .sitebox {
+    display: grid;
+  }
+
+
+/* computer users hell yeah !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+@media screen and (min-width: 800px){
+    .sitebox {
+      grid-template-columns: 0;
+      grid-template-rows: 0; 
+    }
+}
+
+/* mobile users yikes :(((((((((((( frown */
+
+@media screen and (max-width: 800px){
+    .sitebox {
+      grid-template-columns: 0;
+      grid-template-rows: 0; 
+    }
+}
