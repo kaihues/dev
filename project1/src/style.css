@@ -1,36 +1,68 @@
 body {
-    background-color:#CCF6FF;
-    padding: 0;
-    margin: 0;
-  }
+  background-color:#CCF6FF;
+  padding: 0;
+  margin: 0;
+}
 
-  .navbar {
-    color: white;
-    background-color:#53A4FB;
-    padding: 0px 15px 1.75vw;
-    margin: 0px;
-    position: fixed;
-  }
+.sitebox {
+  display: grid;
+}
 
-  .sitebox {
-    display: grid;
-  }
+.navbar {
+  color: white;
+  background-color:#53A4FB;
+  padding: 0px 15px 1.75vw;
+  margin: 0px;
+  position: fixed;
+}
 
+.navbutton {
+  display: block;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2vw;
+  border: none;
+  border-radius: 8px;
+  font-size: medium;
+  font-weight: bold;
+  margin-top: 2.5vw;
+}
+
+#stemEdButton {
+  background-color: #5adb7f;
+}
+
+#techButton {
+  background-color: #69d9f0;
+}
+
+#designButton {
+  background-color: #9c8deb;
+}
+
+.resume {
+  background-color: white;
+}
+
+.sidebar {
+  background-color: #69d9f0;
+}
 
 /* computer users hell yeah !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 @media screen and (min-width: 800px){
-    .sitebox {
-      grid-template-columns: 0;
-      grid-template-rows: 0; 
-    }
+  .sitebox {
+    grid-template-columns: 0;
+    grid-template-rows: 0; 
+  }
 }
 
 /* mobile users yikes :(((((((((((( frown */
 
 @media screen and (max-width: 800px){
-    .sitebox {
-      grid-template-columns: 0;
-      grid-template-rows: 0; 
-    }
+  .sitebox {
+    grid-template-columns: 0;
+    grid-template-rows: 0; 
+  }
 }
