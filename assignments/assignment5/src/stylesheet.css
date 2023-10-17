@@ -68,6 +68,8 @@ body {
     height: 3vw;
   }
 
-  .test {
-    color:red;
+  .textbox {
+    display: flex;
+    justify-content: center;
   }
+
