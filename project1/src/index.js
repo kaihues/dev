@@ -1,5 +1,6 @@
 import './style.css';
 import logo from './images/logo.png';
+import scissordivider from './images/scissors-divider.png';
 
 const green = '#5adb7f';
 const darkgreen = '#49c96d';
@@ -11,30 +12,91 @@ const darkpurple = '#8b7cd6';
 let logoimg = document.getElementById('logo');
 logoimg.src=logo;
 
+let scissimg = document.getElementById('scissordivider');
+scissimg.src=scissordivider;
+
 let sidebar = document.getElementById('sidebar');
-let colorTitles = document.getElementsByTagName('h4');
+let colorElement = document.getElementsByClassName('colorElement');
 
 let stemButton = document.getElementById("stemEdButton");
 let techButton = document.getElementById("creativeTechButton");
 let servButton = document.getElementById("serviceButton");
 
+let techElement = document.getElementsByClassName('techElement');
+let stemElement = document.getElementsByClassName('stemElement');
+let servElement = document.getElementsByClassName('servElement');
+
+
+techResume();
+
+
 stemButton.addEventListener('click', () => {
+    stemResume();
+});
+
+techButton.addEventListener('click', () => {
+    techResume();
+});
+
+servButton.addEventListener('click', () => {
+    servResume();
+});
+
+function show(type) {
+    for (const element of type) {
+        element.classList.remove("hidden");
+    }
+};
+
+function hide(type) {
+    for (const element of type) {
+        element.classList.add("hidden");
+    }
+};
+
+function color(color) {
+    for (const element of colorElement) {
+        element.style.color = color;
+    }
+};
+
+
+function stemResume() {
     sidebar.style.backgroundColor = green;
     stemButton.style.backgroundColor = darkgreen;
     techButton.style.backgroundColor = cyan;
     servButton.style.backgroundColor = purple;
-});
+    
+    color(green);
 
-techButton.addEventListener('click', () => {
+    hide(techElement);
+    hide(servElement);
+    show(stemElement);
+};
+
+function techResume() {
     sidebar.style.backgroundColor = cyan;
     techButton.style.backgroundColor = darkcyan;
     stemButton.style.backgroundColor = green;
     servButton.style.backgroundColor = purple;
-});
+    
+    color(cyan);
 
-servButton.addEventListener('click', () => {
+    hide(stemElement);
+    hide(servElement);
+    show(techElement);
+};
+
+function servResume() {
     sidebar.style.backgroundColor = purple;
     servButton.style.backgroundColor = darkpurple;
     techButton.style.backgroundColor = cyan;
     stemButton.style.backgroundColor = green;
-});
+
+    color(purple);
+
+    hide(techElement);
+    hide(stemElement);
+    show(servElement);
+};
+

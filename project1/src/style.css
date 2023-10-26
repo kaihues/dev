@@ -5,8 +5,9 @@ body {
 }
 
 h1 {
-  color: black;
+  color: white;
   font-family: "Lucida Sans Unicode", Verdana, sans-serif;
+  margin-bottom: 0px;
 }
 
 h2 {
@@ -57,7 +58,6 @@ p {
   position: fixed;
   height: 65px;
   width: 100vw; 
-
   display: flex;
   justify-content: space-between;
 }
@@ -141,6 +141,19 @@ p {
 
 li + li {
   margin-top: 10px;
+}
+
+#logo {
+  width: 10vw;
+  padding-left: 2.5vw;
+}
+
+#scissordivider {
+  width: 15vw;
+}
+
+.hidden {
+  display: none;
 }
 
 /* computer users hell yeah !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
