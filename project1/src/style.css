@@ -79,7 +79,6 @@ p {
   display: inline-block;
   color: white;
   padding: 10px 20px;
-  font-size: medium;
   font-weight: bold;
   margin-top: 15px;
   margin-left: 15px;
@@ -107,7 +106,6 @@ p {
 #downloadButton {
   color: white;
   padding: 10px 20px;
-  font-size: medium;
   font-weight: bold;
   height: 35px;
   border: none;
@@ -146,6 +144,7 @@ p {
 
 #mainlist {
   list-style: none;
+  margin-top: 55px;
 }
 
 .bulletlist {
@@ -181,7 +180,7 @@ li + li {
 
 /* computer users hell yeah !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 1400px){
   .sitebox {
     grid-template-columns: 19vw 60vw 21vw;
     grid-template-rows: 70px 3vw 77.6vw 3vw; 
@@ -193,6 +192,39 @@ li + li {
 
   .sidebar {
     height: 77.6vw;
+  }
+
+  .navbutton {
+    font-size: medium;
+  }
+
+  #downloadButton {
+    font-size: medium;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width:1400px){
+  .sitebox {
+    grid-template-columns: 12.5vw 75vw 12.5vw;
+    grid-template-rows: 70px 3vw 97vw 3vw; 
+  }
+
+  .resume {
+    grid-template-columns: 25vw 50vw;
+  }
+
+  .sidebar {
+    height: 97vw;
+  }
+
+  .navbutton {
+    font-size: 1.2vw;
+    padding: 8px 15px;
+  }
+
+  #downloadButton {
+    font-size: 1.2vw;
+    padding: 8px 15px;
   }
 }
 
@@ -210,5 +242,53 @@ li + li {
 
   .sidebar {
     height: 116.5vw;
+  }
+
+  .navbutton {
+    font-size: 1.6vw;
+    padding: 0px 10px;
+    margin-left: 5px;
+  }
+
+  #downloadButton {
+    font-size: 1.6vw;
+    padding: 5px 10px;
+  }
+
+  ul {
+    margin-left: 0px;
+    padding-left: 20px;
+  }
+
+  p {
+    font-size: 1.8vw;
+    line-height: 2.3vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    font-size: 2.6vw;
+    margin-bottom: 5px;
+  }
+
+  h4 {
+    font-size: 2.2vw;
+  }
+
+  #name {
+    font-size: 3.65vw;
+  }
+
+  #mainlist {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  li + li {
+    margin-top: 5px;
   }
 }
