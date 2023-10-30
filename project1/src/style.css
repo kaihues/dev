@@ -131,7 +131,6 @@ p {
   background-color: #69d9f0;
   grid-column-start: 1;
   grid-column-end: 2;
-  height: 77.6vw;
   padding-right: 30px;
 }
 
@@ -191,13 +190,25 @@ li + li {
   .resume {
     grid-template-columns: 20vw 40vw;
   }
+
+  .sidebar {
+    height: 77.6vw;
+  }
 }
 
 /* mobile users yikes :(((((((((((( frown */
 
 @media screen and (max-width: 800px){
   .sitebox {
-    grid-template-columns: 0;
-    grid-template-rows: 0; 
+    grid-template-columns: 5vw 90vw 5vw;
+    grid-template-rows: 70px 3vw 116.5vw 3vw;
+  }
+
+  .resume {
+    grid-template-columns: 30vw 60vw;
+  }
+
+  .sidebar {
+    height: 116.5vw;
   }
 }
