@@ -1,7 +1,7 @@
 import './style.css';
 import logo from './images/logo.png';
 import scissordivider from './images/scissors-divider.png';
-import { jsPDF } from "jspdf";
+import jsPDF from "jspdf";
 
 const green = '#5adb7f';
 const darkgreen = '#49c96d';
@@ -36,7 +36,7 @@ const doc = new jsPDF({
     orientation: "portrait",
     unit: "in",
   });
-
+/*
 function generateResume() {
     doc.html(resume).then(function () {
       doc.save('kai-resume.pdf');
@@ -44,8 +44,15 @@ function generateResume() {
     })
     console.log("generated");
  };
-
-
+*/
+function generateResume() {
+doc.html(document.body, {
+    callback: function (doc) {
+      doc.save('resume');
+    }
+ });
+}
+ 
 downButton.addEventListener('click', () => {
     generateResume();
 });
