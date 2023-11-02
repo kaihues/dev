@@ -251,8 +251,12 @@ li + li {
   }
 
   #downloadButton {
-    font-size: 1.6vw;
+    font-size: 4vw;
     padding: 5px 10px;
+    height: 50px;
+    border-radius: 20px;
+    right: 20px;
+    bottom: 20px;
   }
 
   ul {

@@ -32,6 +32,9 @@ let techElement = document.getElementsByClassName('techElement');
 let stemElement = document.getElementsByClassName('stemElement');
 let servElement = document.getElementsByClassName('servElement');
 
+
+let max = window.matchMedia("(max-width: 800px)");
+
 function generateResume() {
     html2PDF(resume, {
         jsPDF: {
@@ -119,7 +122,20 @@ function servResume() {
     show(servElement);
 };
 
+function mediaQuery(x) {
+    if (x.matches) { // If screen is less than / equal to 800
+        downButton.innerText = '\xa0' + "⤓" + '\xa0';
+      } else {
+        downButton.innerText = "⤓ Download PDF";
+      }
+}
+
+max.addEventListener('change', () => {
+    mediaQuery(max);
+});
+
 function setup(){
+    mediaQuery(max);
     hide(techElement);
     hide(stemElement);
     hide(servElement);
