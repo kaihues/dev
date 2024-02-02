@@ -9,6 +9,7 @@ const cyan = '#69d9f0';
 const darkcyan = '#5ac1d6';
 const purple = '#9c8deb';
 const darkpurple = '#8b7cd6';
+const blue = '#42adff';
 
 
 let logoimg = document.getElementById('logo');
@@ -24,6 +25,7 @@ let colorElement = document.getElementsByClassName('colorElement');
 let stemButton = document.getElementById("stemEdButton");
 let techButton = document.getElementById("creativeTechButton");
 let servButton = document.getElementById("serviceButton");
+let custButton = document.getElementById("customButton");
 
 let downButton = document.getElementById("downloadButton");
 let resume = document.getElementById('resume');
@@ -31,6 +33,9 @@ let resume = document.getElementById('resume');
 let techElement = document.getElementsByClassName('techElement');
 let stemElement = document.getElementsByClassName('stemElement');
 let servElement = document.getElementsByClassName('servElement');
+let custElement = document.getElementsByClassName('custom');
+
+let courselist = document.getElementsByClassName('courselist');
 
 
 let max = window.matchMedia("(max-width: 800px)");
@@ -62,6 +67,10 @@ servButton.addEventListener('click', () => {
     servResume();
 });
 
+custButton.addEventListener('click', () => {
+    customResume();
+});
+
 function show(type) {
     for (const element of type) {
         element.classList.remove("hidden");
@@ -91,6 +100,8 @@ function stemResume() {
     hide(stemElement);
     hide(techElement);
     hide(servElement);
+    hide(custElement);
+    
     show(stemElement);
 };
 
@@ -105,6 +116,8 @@ function techResume() {
     hide(techElement);
     hide(stemElement);
     hide(servElement);
+    hide(custElement);
+
     show(techElement);
 };
 
@@ -119,7 +132,27 @@ function servResume() {
     hide(servElement);
     hide(techElement);
     hide(stemElement);
+    hide(custElement);
+    hide(courselist);
+
     show(servElement);
+};
+
+function customResume() {
+    sidebar.style.backgroundColor = blue;
+    stemButton.style.backgroundColor = green;
+    techButton.style.backgroundColor = cyan;
+    servButton.style.backgroundColor = purple;
+    
+    color(blue);
+
+    hide(custElement);
+    hide(stemElement);
+    hide(techElement);
+    hide(servElement);
+    hide(courselist);
+
+    show(custElement);
 };
 
 function mediaQuery(x) {

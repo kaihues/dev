@@ -103,6 +103,10 @@ p {
   background-color: #9c8deb;
 }
 
+#customButton {
+  background-color: #f0c21d;
+}
+
 #downloadButton {
   color: white;
   padding: 10px 20px;
